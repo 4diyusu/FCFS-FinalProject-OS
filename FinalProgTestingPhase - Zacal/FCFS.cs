@@ -10,11 +10,16 @@ using System.Windows.Forms;
 
 namespace FinalProgTestingPhase___Zacal
 {
-    public partial class FCFS: Form
+    public partial class FCFS : Form
     {
         public FCFS()
         {
             InitializeComponent();
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }
