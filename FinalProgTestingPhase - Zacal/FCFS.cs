@@ -40,12 +40,12 @@ namespace FinalProgTestingPhase___Zacal
             if (consultationQueue.Count > 0)
             {
                 string serving = consultationQueue.Dequeue();
-                lblConsultation.Text = "Now Serving: " + serving;
+                lblConsultation.Text = "Now Serving: " + "\n" + serving;
                 listConsultation.Items.RemoveAt(0);
             }
             else
             {
-                lblConsultation.Text = "Now Serving: None";
+                lblConsultation.Text = "Now Serving: \nNone";
             }
         }
 
@@ -62,12 +62,12 @@ namespace FinalProgTestingPhase___Zacal
             if (laboratoryQueue.Count > 0)
             {
                 string serving = laboratoryQueue.Dequeue();
-                lblLaboratory.Text = "Now Serving: " + serving;
+                lblLaboratory.Text = "Now Serving: " + "\n" + serving;
                 listLaboratory.Items.RemoveAt(0);
             }
             else
             {
-                lblLaboratory.Text = "Now Serving: None";
+                lblLaboratory.Text = "Now Serving: \nNone";
             }
         }
 
@@ -84,12 +84,12 @@ namespace FinalProgTestingPhase___Zacal
             if (vaccinationQueue.Count > 0)
             {
                 string serving = vaccinationQueue.Dequeue();
-                lblVaccination.Text = "Now Serving: " + serving;
+                lblVaccination.Text = "Now Serving: " + "\n" + serving;
                 listVaccination.Items.RemoveAt(0);
             }
             else
             {
-                lblVaccination.Text = "Now Serving: None";
+                lblVaccination.Text = "Now Serving: \nNone";
             }
         }
 
@@ -97,7 +97,7 @@ namespace FinalProgTestingPhase___Zacal
         private void btnAddBilling_Click(object sender, EventArgs e)
         {
             string person = "Billing #" + billingCount++;
-           billingQueue.Enqueue(person);
+            billingQueue.Enqueue(person);
             listBilling.Items.Add(person);
         }
 
@@ -106,13 +106,16 @@ namespace FinalProgTestingPhase___Zacal
             if (billingQueue.Count > 0)
             {
                 string serving = billingQueue.Dequeue();
-                lblBilling.Text = "Now Serving: " + serving;
+                lblBilling.Text = "Now Serving: " + "\n" + serving;
                 listBilling.Items.RemoveAt(0);
             }
             else
             {
-                lblBilling.Text = "Now Serving: None";
+                lblBilling.Text = "Now Serving: \nNone";
             }
         }
+
+        //Backend Commit Msg test 001
+
     }
 }
