@@ -44,10 +44,10 @@
             lblTreasuryServing = new Label();
             lblScholarshipServing = new Label();
             lblHelpDeskServing = new Label();
-            lstRegistrar = new ListBox();
-            lstTreasury = new ListBox();
-            lstScholarship = new ListBox();
-            lstHelpDesk = new ListBox();
+            Consultation = new ListBox();
+            Laboratory = new ListBox();
+            Vaccination = new ListBox();
+            Billing = new ListBox();
             SuspendLayout();
             // 
             // label1
@@ -55,7 +55,7 @@
             label1.AutoSize = true;
             label1.Location = new Point(92, 18);
             label1.Name = "label1";
-            label1.Size = new Size(65, 15);
+            label1.Size = new Size(66, 15);
             label1.TabIndex = 0;
             label1.Text = "REGISTRAR";
             // 
@@ -73,7 +73,7 @@
             label3.AutoSize = true;
             label3.Location = new Point(519, 18);
             label3.Name = "label3";
-            label3.Size = new Size(62, 15);
+            label3.Size = new Size(63, 15);
             label3.TabIndex = 2;
             label3.Text = "TREASURY";
             // 
@@ -211,55 +211,55 @@
             lblHelpDeskServing.TabIndex = 15;
             lblHelpDeskServing.Text = "--";
             // 
-            // lstRegistrar
+            // Consultation
             // 
-            lstRegistrar.FormattingEnabled = true;
-            lstRegistrar.ItemHeight = 15;
-            lstRegistrar.Location = new Point(269, 18);
-            lstRegistrar.Margin = new Padding(3, 2, 3, 2);
-            lstRegistrar.Name = "lstRegistrar";
-            lstRegistrar.Size = new Size(132, 199);
-            lstRegistrar.TabIndex = 16;
+            Consultation.FormattingEnabled = true;
+            Consultation.ItemHeight = 15;
+            Consultation.Location = new Point(269, 18);
+            Consultation.Margin = new Padding(3, 2, 3, 2);
+            Consultation.Name = "Consultation";
+            Consultation.Size = new Size(132, 199);
+            Consultation.TabIndex = 16;
             // 
-            // lstTreasury
+            // Laboratory
             // 
-            lstTreasury.FormattingEnabled = true;
-            lstTreasury.ItemHeight = 15;
-            lstTreasury.Location = new Point(650, 18);
-            lstTreasury.Margin = new Padding(3, 2, 3, 2);
-            lstTreasury.Name = "lstTreasury";
-            lstTreasury.Size = new Size(132, 199);
-            lstTreasury.TabIndex = 17;
+            Laboratory.FormattingEnabled = true;
+            Laboratory.ItemHeight = 15;
+            Laboratory.Location = new Point(650, 18);
+            Laboratory.Margin = new Padding(3, 2, 3, 2);
+            Laboratory.Name = "Laboratory";
+            Laboratory.Size = new Size(132, 199);
+            Laboratory.TabIndex = 17;
             // 
-            // lstScholarship
+            // Vaccination
             // 
-            lstScholarship.FormattingEnabled = true;
-            lstScholarship.ItemHeight = 15;
-            lstScholarship.Location = new Point(269, 237);
-            lstScholarship.Margin = new Padding(3, 2, 3, 2);
-            lstScholarship.Name = "lstScholarship";
-            lstScholarship.Size = new Size(132, 199);
-            lstScholarship.TabIndex = 18;
+            Vaccination.FormattingEnabled = true;
+            Vaccination.ItemHeight = 15;
+            Vaccination.Location = new Point(269, 237);
+            Vaccination.Margin = new Padding(3, 2, 3, 2);
+            Vaccination.Name = "Vaccination";
+            Vaccination.Size = new Size(132, 199);
+            Vaccination.TabIndex = 18;
             // 
-            // lstHelpDesk
+            // Billing
             // 
-            lstHelpDesk.FormattingEnabled = true;
-            lstHelpDesk.ItemHeight = 15;
-            lstHelpDesk.Location = new Point(650, 228);
-            lstHelpDesk.Margin = new Padding(3, 2, 3, 2);
-            lstHelpDesk.Name = "lstHelpDesk";
-            lstHelpDesk.Size = new Size(132, 199);
-            lstHelpDesk.TabIndex = 19;
+            Billing.FormattingEnabled = true;
+            Billing.ItemHeight = 15;
+            Billing.Location = new Point(650, 228);
+            Billing.Margin = new Padding(3, 2, 3, 2);
+            Billing.Name = "Billing";
+            Billing.Size = new Size(132, 199);
+            Billing.TabIndex = 19;
             // 
             // Form1
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(933, 456);
-            Controls.Add(lstHelpDesk);
-            Controls.Add(lstScholarship);
-            Controls.Add(lstTreasury);
-            Controls.Add(lstRegistrar);
+            Controls.Add(Billing);
+            Controls.Add(Vaccination);
+            Controls.Add(Laboratory);
+            Controls.Add(Consultation);
             Controls.Add(lblHelpDeskServing);
             Controls.Add(lblScholarshipServing);
             Controls.Add(lblTreasuryServing);
@@ -302,9 +302,9 @@
         private Label lblTreasuryServing;
         private Label lblScholarshipServing;
         private Label lblHelpDeskServing;
-        private ListBox lstRegistrar;
-        private ListBox lstTreasury;
-        private ListBox lstScholarship;
-        private ListBox lstHelpDesk;
+        private ListBox Consultation;
+        private ListBox Laboratory;
+        private ListBox Vaccination;
+        private ListBox Billing;
     }
 }
