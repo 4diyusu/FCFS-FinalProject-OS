@@ -245,7 +245,7 @@
             // 
             lstHelpDesk.FormattingEnabled = true;
             lstHelpDesk.ItemHeight = 15;
-            lstHelpDesk.Location = new Point(650, 228);
+            lstHelpDesk.Location = new Point(650, 237);
             lstHelpDesk.Margin = new Padding(3, 2, 3, 2);
             lstHelpDesk.Name = "lstHelpDesk";
             lstHelpDesk.Size = new Size(132, 199);
