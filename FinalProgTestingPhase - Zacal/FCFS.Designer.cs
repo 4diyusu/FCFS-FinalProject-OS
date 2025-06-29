@@ -31,21 +31,21 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(FCFS));
             pictureBox1 = new PictureBox();
             lblConsultation = new Label();
-            label1 = new Label();
-            label2 = new Label();
-            label3 = new Label();
+            lblLaboratory = new Label();
+            lblVaccination = new Label();
+            lblBilling = new Label();
             listConsultation = new ListBox();
             listLaboratory = new ListBox();
             listVaccination = new ListBox();
             listBilling = new ListBox();
-            button1 = new Button();
-            button2 = new Button();
-            button3 = new Button();
-            button4 = new Button();
-            button5 = new Button();
-            button6 = new Button();
-            button7 = new Button();
-            button8 = new Button();
+            btnAddConsultation = new Button();
+            btnAddLaboratory = new Button();
+            btnAddBilling = new Button();
+            btnAddVaccination = new Button();
+            btnNxtConsultation = new Button();
+            btnNxtLaboratory = new Button();
+            btnNxtVaccination = new Button();
+            btnNxtBilling = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
@@ -62,231 +62,238 @@
             // 
             lblConsultation.AutoSize = true;
             lblConsultation.BackColor = Color.Transparent;
-            lblConsultation.Font = new Font("Arial Rounded MT Bold", 15.75F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            lblConsultation.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Italic, GraphicsUnit.Point, 0);
             lblConsultation.ForeColor = Color.FromArgb(0, 0, 64);
             lblConsultation.Location = new Point(94, 117);
             lblConsultation.Name = "lblConsultation";
-            lblConsultation.Size = new Size(17, 24);
+            lblConsultation.Size = new Size(19, 25);
             lblConsultation.TabIndex = 5;
             lblConsultation.Text = "-";
             // 
-            // label1
+            // lblLaboratory
             // 
-            label1.AutoSize = true;
-            label1.BackColor = Color.Transparent;
-            label1.Font = new Font("Arial Rounded MT Bold", 15.75F, FontStyle.Italic, GraphicsUnit.Point, 0);
-            label1.ForeColor = Color.FromArgb(0, 0, 64);
-            label1.Location = new Point(476, 117);
-            label1.Name = "label1";
-            label1.Size = new Size(17, 24);
-            label1.TabIndex = 6;
-            label1.Text = "-";
+            lblLaboratory.AutoSize = true;
+            lblLaboratory.BackColor = Color.Transparent;
+            lblLaboratory.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            lblLaboratory.ForeColor = Color.FromArgb(0, 0, 64);
+            lblLaboratory.Location = new Point(476, 117);
+            lblLaboratory.Name = "lblLaboratory";
+            lblLaboratory.Size = new Size(19, 25);
+            lblLaboratory.TabIndex = 6;
+            lblLaboratory.Text = "-";
             // 
-            // label2
+            // lblVaccination
             // 
-            label2.AutoSize = true;
-            label2.BackColor = Color.Transparent;
-            label2.Font = new Font("Arial Rounded MT Bold", 15.75F, FontStyle.Italic, GraphicsUnit.Point, 0);
-            label2.ForeColor = Color.FromArgb(0, 0, 64);
-            label2.Location = new Point(94, 325);
-            label2.Name = "label2";
-            label2.Size = new Size(17, 24);
-            label2.TabIndex = 7;
-            label2.Text = "-";
+            lblVaccination.AutoSize = true;
+            lblVaccination.BackColor = Color.Transparent;
+            lblVaccination.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            lblVaccination.ForeColor = Color.FromArgb(0, 0, 64);
+            lblVaccination.Location = new Point(94, 325);
+            lblVaccination.Name = "lblVaccination";
+            lblVaccination.Size = new Size(19, 25);
+            lblVaccination.TabIndex = 7;
+            lblVaccination.Text = "-";
             // 
-            // label3
+            // lblBilling
             // 
-            label3.AutoSize = true;
-            label3.BackColor = Color.Transparent;
-            label3.Font = new Font("Arial Rounded MT Bold", 15.75F, FontStyle.Italic, GraphicsUnit.Point, 0);
-            label3.ForeColor = Color.FromArgb(0, 0, 64);
-            label3.Location = new Point(476, 325);
-            label3.Name = "label3";
-            label3.Size = new Size(17, 24);
-            label3.TabIndex = 8;
-            label3.Text = "-";
+            lblBilling.AutoSize = true;
+            lblBilling.BackColor = Color.Transparent;
+            lblBilling.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            lblBilling.ForeColor = Color.FromArgb(0, 0, 64);
+            lblBilling.Location = new Point(476, 325);
+            lblBilling.Name = "lblBilling";
+            lblBilling.Size = new Size(19, 25);
+            lblBilling.TabIndex = 8;
+            lblBilling.Text = "-";
             // 
             // listConsultation
             // 
             listConsultation.BackColor = SystemColors.InactiveCaption;
             listConsultation.BorderStyle = BorderStyle.None;
-            listConsultation.Font = new Font("Arial Rounded MT Bold", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            listConsultation.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             listConsultation.FormattingEnabled = true;
-            listConsultation.ItemHeight = 17;
+            listConsultation.ItemHeight = 18;
             listConsultation.Location = new Point(217, 55);
             listConsultation.Name = "listConsultation";
-            listConsultation.Size = new Size(169, 187);
+            listConsultation.Size = new Size(169, 180);
             listConsultation.TabIndex = 9;
             // 
             // listLaboratory
             // 
             listLaboratory.BackColor = SystemColors.InactiveCaption;
             listLaboratory.BorderStyle = BorderStyle.None;
-            listLaboratory.Font = new Font("Arial Rounded MT Bold", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            listLaboratory.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             listLaboratory.FormattingEnabled = true;
-            listLaboratory.ItemHeight = 17;
+            listLaboratory.ItemHeight = 18;
             listLaboratory.Location = new Point(592, 55);
             listLaboratory.Name = "listLaboratory";
-            listLaboratory.Size = new Size(169, 187);
+            listLaboratory.Size = new Size(169, 180);
             listLaboratory.TabIndex = 10;
             // 
             // listVaccination
             // 
             listVaccination.BackColor = SystemColors.InactiveCaption;
             listVaccination.BorderStyle = BorderStyle.None;
-            listVaccination.Font = new Font("Arial Rounded MT Bold", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            listVaccination.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             listVaccination.FormattingEnabled = true;
-            listVaccination.ItemHeight = 17;
+            listVaccination.ItemHeight = 18;
             listVaccination.Location = new Point(217, 248);
             listVaccination.Name = "listVaccination";
-            listVaccination.Size = new Size(169, 187);
+            listVaccination.Size = new Size(169, 180);
             listVaccination.TabIndex = 11;
             // 
             // listBilling
             // 
             listBilling.BackColor = SystemColors.InactiveCaption;
             listBilling.BorderStyle = BorderStyle.None;
-            listBilling.Font = new Font("Arial Rounded MT Bold", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
+            listBilling.Font = new Font("Microsoft Sans Serif", 11.25F, FontStyle.Regular, GraphicsUnit.Point, 0);
             listBilling.FormattingEnabled = true;
-            listBilling.ItemHeight = 17;
+            listBilling.ItemHeight = 18;
             listBilling.Location = new Point(592, 248);
             listBilling.Name = "listBilling";
-            listBilling.Size = new Size(169, 187);
+            listBilling.Size = new Size(169, 180);
             listBilling.TabIndex = 12;
             // 
-            // button1
+            // btnAddConsultation
             // 
-            button1.BackColor = SystemColors.InactiveCaption;
-            button1.FlatAppearance.BorderColor = SystemColors.InactiveCaption;
-            button1.FlatStyle = FlatStyle.Popup;
-            button1.Font = new Font("Arial Narrow", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.ForeColor = Color.FromArgb(0, 0, 64);
-            button1.Location = new Point(59, 173);
-            button1.Name = "button1";
-            button1.Size = new Size(93, 23);
-            button1.TabIndex = 13;
-            button1.Text = "ADD QUEUE";
-            button1.UseVisualStyleBackColor = false;
+            btnAddConsultation.BackColor = SystemColors.InactiveCaption;
+            btnAddConsultation.FlatAppearance.BorderColor = SystemColors.InactiveCaption;
+            btnAddConsultation.FlatStyle = FlatStyle.Popup;
+            btnAddConsultation.Font = new Font("Arial Narrow", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnAddConsultation.ForeColor = Color.FromArgb(0, 0, 64);
+            btnAddConsultation.Location = new Point(59, 173);
+            btnAddConsultation.Name = "btnAddConsultation";
+            btnAddConsultation.Size = new Size(93, 23);
+            btnAddConsultation.TabIndex = 13;
+            btnAddConsultation.Text = "ADD QUEUE";
+            btnAddConsultation.UseVisualStyleBackColor = false;
+            btnAddConsultation.Click += btnAddConsultation_Click;
             // 
-            // button2
+            // btnAddLaboratory
             // 
-            button2.BackColor = SystemColors.InactiveCaption;
-            button2.FlatAppearance.BorderColor = SystemColors.InactiveCaption;
-            button2.FlatStyle = FlatStyle.Popup;
-            button2.Font = new Font("Arial Narrow", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button2.ForeColor = Color.FromArgb(0, 0, 64);
-            button2.Location = new Point(439, 173);
-            button2.Name = "button2";
-            button2.Size = new Size(93, 23);
-            button2.TabIndex = 14;
-            button2.Text = "ADD QUEUE";
-            button2.UseVisualStyleBackColor = false;
-            button2.Click += button2_Click;
+            btnAddLaboratory.BackColor = SystemColors.InactiveCaption;
+            btnAddLaboratory.FlatAppearance.BorderColor = SystemColors.InactiveCaption;
+            btnAddLaboratory.FlatStyle = FlatStyle.Popup;
+            btnAddLaboratory.Font = new Font("Arial Narrow", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnAddLaboratory.ForeColor = Color.FromArgb(0, 0, 64);
+            btnAddLaboratory.Location = new Point(439, 173);
+            btnAddLaboratory.Name = "btnAddLaboratory";
+            btnAddLaboratory.Size = new Size(93, 23);
+            btnAddLaboratory.TabIndex = 14;
+            btnAddLaboratory.Text = "ADD QUEUE";
+            btnAddLaboratory.UseVisualStyleBackColor = false;
+            btnAddLaboratory.Click += btnAddLaboratory_Click;
             // 
-            // button3
+            // btnAddBilling
             // 
-            button3.BackColor = SystemColors.InactiveCaption;
-            button3.FlatAppearance.BorderColor = SystemColors.InactiveCaption;
-            button3.FlatStyle = FlatStyle.Popup;
-            button3.Font = new Font("Arial Narrow", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button3.ForeColor = Color.FromArgb(0, 0, 64);
-            button3.Location = new Point(439, 368);
-            button3.Name = "button3";
-            button3.Size = new Size(93, 23);
-            button3.TabIndex = 15;
-            button3.Text = "ADD QUEUE";
-            button3.UseVisualStyleBackColor = false;
+            btnAddBilling.BackColor = SystemColors.InactiveCaption;
+            btnAddBilling.FlatAppearance.BorderColor = SystemColors.InactiveCaption;
+            btnAddBilling.FlatStyle = FlatStyle.Popup;
+            btnAddBilling.Font = new Font("Arial Narrow", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnAddBilling.ForeColor = Color.FromArgb(0, 0, 64);
+            btnAddBilling.Location = new Point(439, 368);
+            btnAddBilling.Name = "btnAddBilling";
+            btnAddBilling.Size = new Size(93, 23);
+            btnAddBilling.TabIndex = 15;
+            btnAddBilling.Text = "ADD QUEUE";
+            btnAddBilling.UseVisualStyleBackColor = false;
+            btnAddBilling.Click += btnAddBilling_Click;
             // 
-            // button4
+            // btnAddVaccination
             // 
-            button4.BackColor = SystemColors.InactiveCaption;
-            button4.FlatAppearance.BorderColor = SystemColors.InactiveCaption;
-            button4.FlatStyle = FlatStyle.Popup;
-            button4.Font = new Font("Arial Narrow", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button4.ForeColor = Color.FromArgb(0, 0, 64);
-            button4.Location = new Point(59, 368);
-            button4.Name = "button4";
-            button4.Size = new Size(93, 23);
-            button4.TabIndex = 16;
-            button4.Text = "ADD QUEUE";
-            button4.UseVisualStyleBackColor = false;
+            btnAddVaccination.BackColor = SystemColors.InactiveCaption;
+            btnAddVaccination.FlatAppearance.BorderColor = SystemColors.InactiveCaption;
+            btnAddVaccination.FlatStyle = FlatStyle.Popup;
+            btnAddVaccination.Font = new Font("Arial Narrow", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnAddVaccination.ForeColor = Color.FromArgb(0, 0, 64);
+            btnAddVaccination.Location = new Point(59, 368);
+            btnAddVaccination.Name = "btnAddVaccination";
+            btnAddVaccination.Size = new Size(93, 23);
+            btnAddVaccination.TabIndex = 16;
+            btnAddVaccination.Text = "ADD QUEUE";
+            btnAddVaccination.UseVisualStyleBackColor = false;
+            btnAddVaccination.Click += btnAddVaccination_Click;
             // 
-            // button5
+            // btnNxtConsultation
             // 
-            button5.BackColor = SystemColors.InactiveCaption;
-            button5.FlatAppearance.BorderColor = SystemColors.InactiveCaption;
-            button5.FlatStyle = FlatStyle.Popup;
-            button5.Font = new Font("Arial Narrow", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button5.ForeColor = Color.FromArgb(0, 0, 64);
-            button5.Location = new Point(59, 202);
-            button5.Name = "button5";
-            button5.Size = new Size(93, 23);
-            button5.TabIndex = 17;
-            button5.Text = "NEXT";
-            button5.UseVisualStyleBackColor = false;
+            btnNxtConsultation.BackColor = SystemColors.InactiveCaption;
+            btnNxtConsultation.FlatAppearance.BorderColor = SystemColors.InactiveCaption;
+            btnNxtConsultation.FlatStyle = FlatStyle.Popup;
+            btnNxtConsultation.Font = new Font("Arial Narrow", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnNxtConsultation.ForeColor = Color.FromArgb(0, 0, 64);
+            btnNxtConsultation.Location = new Point(59, 202);
+            btnNxtConsultation.Name = "btnNxtConsultation";
+            btnNxtConsultation.Size = new Size(93, 23);
+            btnNxtConsultation.TabIndex = 17;
+            btnNxtConsultation.Text = "NEXT";
+            btnNxtConsultation.UseVisualStyleBackColor = false;
+            btnNxtConsultation.Click += btnNxtConsultation_Click;
             // 
-            // button6
+            // btnNxtLaboratory
             // 
-            button6.BackColor = SystemColors.InactiveCaption;
-            button6.FlatAppearance.BorderColor = SystemColors.InactiveCaption;
-            button6.FlatStyle = FlatStyle.Popup;
-            button6.Font = new Font("Arial Narrow", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button6.ForeColor = Color.FromArgb(0, 0, 64);
-            button6.Location = new Point(439, 202);
-            button6.Name = "button6";
-            button6.Size = new Size(93, 23);
-            button6.TabIndex = 18;
-            button6.Text = "NEXT";
-            button6.UseVisualStyleBackColor = false;
+            btnNxtLaboratory.BackColor = SystemColors.InactiveCaption;
+            btnNxtLaboratory.FlatAppearance.BorderColor = SystemColors.InactiveCaption;
+            btnNxtLaboratory.FlatStyle = FlatStyle.Popup;
+            btnNxtLaboratory.Font = new Font("Arial Narrow", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnNxtLaboratory.ForeColor = Color.FromArgb(0, 0, 64);
+            btnNxtLaboratory.Location = new Point(439, 202);
+            btnNxtLaboratory.Name = "btnNxtLaboratory";
+            btnNxtLaboratory.Size = new Size(93, 23);
+            btnNxtLaboratory.TabIndex = 18;
+            btnNxtLaboratory.Text = "NEXT";
+            btnNxtLaboratory.UseVisualStyleBackColor = false;
+            btnNxtLaboratory.Click += btnNxtLaboratory_Click;
             // 
-            // button7
+            // btnNxtVaccination
             // 
-            button7.BackColor = SystemColors.InactiveCaption;
-            button7.FlatAppearance.BorderColor = SystemColors.InactiveCaption;
-            button7.FlatStyle = FlatStyle.Popup;
-            button7.Font = new Font("Arial Narrow", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button7.ForeColor = Color.FromArgb(0, 0, 64);
-            button7.Location = new Point(59, 397);
-            button7.Name = "button7";
-            button7.Size = new Size(93, 23);
-            button7.TabIndex = 19;
-            button7.Text = "NEXT";
-            button7.UseVisualStyleBackColor = false;
+            btnNxtVaccination.BackColor = SystemColors.InactiveCaption;
+            btnNxtVaccination.FlatAppearance.BorderColor = SystemColors.InactiveCaption;
+            btnNxtVaccination.FlatStyle = FlatStyle.Popup;
+            btnNxtVaccination.Font = new Font("Arial Narrow", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnNxtVaccination.ForeColor = Color.FromArgb(0, 0, 64);
+            btnNxtVaccination.Location = new Point(59, 397);
+            btnNxtVaccination.Name = "btnNxtVaccination";
+            btnNxtVaccination.Size = new Size(93, 23);
+            btnNxtVaccination.TabIndex = 19;
+            btnNxtVaccination.Text = "NEXT";
+            btnNxtVaccination.UseVisualStyleBackColor = false;
+            btnNxtVaccination.Click += btnNxtVaccination_Click;
             // 
-            // button8
+            // btnNxtBilling
             // 
-            button8.BackColor = SystemColors.InactiveCaption;
-            button8.FlatAppearance.BorderColor = SystemColors.InactiveCaption;
-            button8.FlatStyle = FlatStyle.Popup;
-            button8.Font = new Font("Arial Narrow", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button8.ForeColor = Color.FromArgb(0, 0, 64);
-            button8.Location = new Point(439, 397);
-            button8.Name = "button8";
-            button8.Size = new Size(93, 23);
-            button8.TabIndex = 20;
-            button8.Text = "NEXT";
-            button8.UseVisualStyleBackColor = false;
+            btnNxtBilling.BackColor = SystemColors.InactiveCaption;
+            btnNxtBilling.FlatAppearance.BorderColor = SystemColors.InactiveCaption;
+            btnNxtBilling.FlatStyle = FlatStyle.Popup;
+            btnNxtBilling.Font = new Font("Arial Narrow", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            btnNxtBilling.ForeColor = Color.FromArgb(0, 0, 64);
+            btnNxtBilling.Location = new Point(439, 397);
+            btnNxtBilling.Name = "btnNxtBilling";
+            btnNxtBilling.Size = new Size(93, 23);
+            btnNxtBilling.TabIndex = 20;
+            btnNxtBilling.Text = "NEXT";
+            btnNxtBilling.UseVisualStyleBackColor = false;
+            btnNxtBilling.Click += btnNxtBilling_Click;
             // 
             // FCFS
             // 
             AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(790, 446);
-            Controls.Add(button8);
-            Controls.Add(button7);
-            Controls.Add(button6);
-            Controls.Add(button5);
-            Controls.Add(button4);
-            Controls.Add(button3);
-            Controls.Add(button2);
-            Controls.Add(button1);
+            Controls.Add(btnNxtBilling);
+            Controls.Add(btnNxtVaccination);
+            Controls.Add(btnNxtLaboratory);
+            Controls.Add(btnNxtConsultation);
+            Controls.Add(btnAddVaccination);
+            Controls.Add(btnAddBilling);
+            Controls.Add(btnAddLaboratory);
+            Controls.Add(btnAddConsultation);
             Controls.Add(listBilling);
             Controls.Add(listVaccination);
             Controls.Add(listLaboratory);
             Controls.Add(listConsultation);
-            Controls.Add(label3);
-            Controls.Add(label2);
-            Controls.Add(label1);
+            Controls.Add(lblBilling);
+            Controls.Add(lblVaccination);
+            Controls.Add(lblLaboratory);
             Controls.Add(lblConsultation);
             Controls.Add(pictureBox1);
             Name = "FCFS";
@@ -300,20 +307,20 @@
 
         private PictureBox pictureBox1;
         private Label lblConsultation;
-        private Label label1;
-        private Label label2;
-        private Label label3;
+        private Label lblLaboratory;
+        private Label lblVaccination;
+        private Label lblBilling;
         private ListBox listConsultation;
         private ListBox listLaboratory;
         private ListBox listVaccination;
         private ListBox listBilling;
-        private Button button1;
-        private Button button2;
-        private Button button3;
-        private Button button4;
-        private Button button5;
-        private Button button6;
-        private Button button7;
-        private Button button8;
+        private Button btnAddConsultation;
+        private Button btnAddLaboratory;
+        private Button btnAddBilling;
+        private Button btnAddVaccination;
+        private Button btnNxtConsultation;
+        private Button btnNxtLaboratory;
+        private Button btnNxtVaccination;
+        private Button btnNxtBilling;
     }
 }
