@@ -62,11 +62,11 @@
             // 
             lblConsultation.AutoSize = true;
             lblConsultation.BackColor = Color.Transparent;
-            lblConsultation.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            lblConsultation.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Italic, GraphicsUnit.Point, 0);
             lblConsultation.ForeColor = Color.FromArgb(0, 0, 64);
-            lblConsultation.Location = new Point(94, 117);
+            lblConsultation.Location = new Point(59, 117);
             lblConsultation.Name = "lblConsultation";
-            lblConsultation.Size = new Size(19, 25);
+            lblConsultation.Size = new Size(14, 20);
             lblConsultation.TabIndex = 5;
             lblConsultation.Text = "-";
             // 
@@ -74,11 +74,11 @@
             // 
             lblLaboratory.AutoSize = true;
             lblLaboratory.BackColor = Color.Transparent;
-            lblLaboratory.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            lblLaboratory.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Italic, GraphicsUnit.Point, 0);
             lblLaboratory.ForeColor = Color.FromArgb(0, 0, 64);
-            lblLaboratory.Location = new Point(476, 117);
+            lblLaboratory.Location = new Point(439, 117);
             lblLaboratory.Name = "lblLaboratory";
-            lblLaboratory.Size = new Size(19, 25);
+            lblLaboratory.Size = new Size(14, 20);
             lblLaboratory.TabIndex = 6;
             lblLaboratory.Text = "-";
             // 
@@ -86,11 +86,11 @@
             // 
             lblVaccination.AutoSize = true;
             lblVaccination.BackColor = Color.Transparent;
-            lblVaccination.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            lblVaccination.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Italic, GraphicsUnit.Point, 0);
             lblVaccination.ForeColor = Color.FromArgb(0, 0, 64);
-            lblVaccination.Location = new Point(94, 325);
+            lblVaccination.Location = new Point(59, 312);
             lblVaccination.Name = "lblVaccination";
-            lblVaccination.Size = new Size(19, 25);
+            lblVaccination.Size = new Size(14, 20);
             lblVaccination.TabIndex = 7;
             lblVaccination.Text = "-";
             // 
@@ -98,11 +98,11 @@
             // 
             lblBilling.AutoSize = true;
             lblBilling.BackColor = Color.Transparent;
-            lblBilling.Font = new Font("Microsoft Sans Serif", 15.75F, FontStyle.Italic, GraphicsUnit.Point, 0);
+            lblBilling.Font = new Font("Microsoft Sans Serif", 12F, FontStyle.Italic, GraphicsUnit.Point, 0);
             lblBilling.ForeColor = Color.FromArgb(0, 0, 64);
-            lblBilling.Location = new Point(476, 325);
+            lblBilling.Location = new Point(439, 312);
             lblBilling.Name = "lblBilling";
-            lblBilling.Size = new Size(19, 25);
+            lblBilling.Size = new Size(14, 20);
             lblBilling.TabIndex = 8;
             lblBilling.Text = "-";
             // 
@@ -297,6 +297,7 @@
             Controls.Add(lblConsultation);
             Controls.Add(pictureBox1);
             Name = "FCFS";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Clinic Queue System";
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
